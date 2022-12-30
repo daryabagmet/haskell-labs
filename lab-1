@@ -1,0 +1,13 @@
+getLast :: [a] -> a
+
+getLast [] = error "Empty list"
+getLast [x] = x
+getLast (_:xs) = getLast xs
+
+
+
+
+
+getLastIn :: [a] -> a
+
+getLastIn = head . reverse
