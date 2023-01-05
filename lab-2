@@ -1,0 +1,12 @@
+removeItem :: [a] -> Int -> Int -> [a]
+removeItem (y:ys) 0 0 = y:ys
+removeItem (y:ys) 0 1 = tail ys
+removeItem (y:ys) 0 k = removeItem ys 0 (k-1)
+
+removeItem (y:ys) i 0 = y:removeItem ys (i-1) 0
+removeItem (y:ys) i k = y:removeItem ys (i-1) (k-1)
+
+
+removeItemIn :: [a] -> Int -> Int -> [a]
+removeItemIn xs _ 0 = xs
+removeItemIn xs i k = take i xs ++ (drop (k+1)) xs
