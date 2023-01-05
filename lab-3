@@ -1,0 +1,9 @@
+getListReversed :: [a] -> [a]
+
+getListReversed [] = []
+getListReversed (x:xs) = getListReversed xs ++ [x]
+
+
+getListReversedIn :: [a] -> [a]
+
+getListReversedIn = foldl (flip (:)) []
