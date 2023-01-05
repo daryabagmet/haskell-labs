@@ -9,7 +9,7 @@ b) with using built-in functions.
 1. Find the last element of the list,
 
 2. Remove from the list elements from the i-th to the k-th inclusive, e.g. at i=2 and
-k=4: "asdfghj"⇒ "aghj".
+k=4: "asdfghj"⇒ "ashj".
 
 
 ## High order functions:
